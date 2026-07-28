@@ -61,3 +61,4 @@ htmlcov/
 
 # Project specific
 students_data.json  # Optional: Remove this line if you want to track data
+.vercel
