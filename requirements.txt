@@ -1,0 +1,2 @@
+﻿# No external dependencies required for this application
+# Python 3.6+ is sufficient
