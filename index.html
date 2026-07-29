@@ -3,27 +3,10 @@
 <head>
     <title>Student Management System API</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background: #f4f4f4;
-        }
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; background: #f4f4f4; }
+        .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         h1 { color: #333; }
-        .endpoint {
-            background: #e8f4f8;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            font-family: monospace;
-        }
+        .endpoint { background: #e8f4f8; padding: 10px; margin: 10px 0; border-radius: 5px; }
         .endpoint a { color: #0066cc; text-decoration: none; }
         .endpoint a:hover { text-decoration: underline; }
     </style>
@@ -38,9 +21,6 @@
 
         <div class="endpoint">
             <strong>GET</strong> <a href="/students">/students</a> - List all students
-        </div>
-        <div class="endpoint">
-            <strong>GET</strong> <a href="/students/1">/students/{id}</a> - Get student by ID
         </div>
         <div class="endpoint">
             <strong>GET</strong> <a href="/statistics">/statistics</a> - Get statistics
