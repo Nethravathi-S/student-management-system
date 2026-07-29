@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; }
+        .endpoint {
+            background: #e8f4f8;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+        .endpoint a { color: #0066cc; text-decoration: none; }
+        .endpoint a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🎓 Student Management System API</h1>
+        <p><strong>Status:</strong> ✅ Running</p>
+        <p><strong>Deployed:</strong> Netlify</p>
+
+        <h2>📋 Available Endpoints:</h2>
+
+        <div class="endpoint">
+            <strong>GET</strong> <a href="/students">/students</a> - List all students
+        </div>
+        <div class="endpoint">
+            <strong>GET</strong> <a href="/students/1">/students/{id}</a> - Get student by ID
+        </div>
+        <div class="endpoint">
+            <strong>GET</strong> <a href="/statistics">/statistics</a> - Get statistics
+        </div>
+        <div class="endpoint">
+            <strong>POST</strong> /students - Add new student
+        </div>
+        <div class="endpoint">
+            <strong>PUT</strong> /students/{id} - Update student
+        </div>
+        <div class="endpoint">
+            <strong>DELETE</strong> /students/{id} - Delete student
+        </div>
+
+        <p style="margin-top: 30px; color: #666; font-size: 14px;">
+            Built with ❤️ using Python + FastAPI
+        </p>
+    </div>
+</body>
+</html>
