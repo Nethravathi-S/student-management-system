@@ -1,21 +1,41 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Student Management System API</title>
+    <title>Student Management System</title>
+    <meta charset="UTF-8">
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; background: #f4f4f4; }
-        .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        h1 { color: #333; }
-        .endpoint { background: #e8f4f8; padding: 10px; margin: 10px 0; border-radius: 5px; }
-        .endpoint a { color: #0066cc; text-decoration: none; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f0f4f8;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        .status { color: #27ae60; font-weight: bold; }
+        .endpoint {
+            background: #ecf0f1;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        .endpoint strong { color: #2c3e50; }
+        .endpoint a { color: #2980b9; text-decoration: none; }
         .endpoint a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <div class="card">
         <h1>🎓 Student Management System API</h1>
-        <p><strong>Status:</strong> ✅ Running</p>
-        <p><strong>Deployed:</strong> Netlify</p>
+        <p><span class="status">✅ API is Running</span></p>
+        <p>Deployed on Netlify | Python + FastAPI</p>
 
         <h2>📋 Available Endpoints:</h2>
 
@@ -23,19 +43,22 @@
             <strong>GET</strong> <a href="/students">/students</a> - List all students
         </div>
         <div class="endpoint">
+            <strong>GET</strong> <a href="/students/1">/students/{id}</a> - Get student by ID
+        </div>
+        <div class="endpoint">
             <strong>GET</strong> <a href="/statistics">/statistics</a> - Get statistics
         </div>
         <div class="endpoint">
-            <strong>POST</strong> /students - Add new student
+            <strong>POST</strong> /students - Add a new student
         </div>
         <div class="endpoint">
-            <strong>PUT</strong> /students/{id} - Update student
+            <strong>PUT</strong> /students/{id} - Update a student
         </div>
         <div class="endpoint">
-            <strong>DELETE</strong> /students/{id} - Delete student
+            <strong>DELETE</strong> /students/{id} - Delete a student
         </div>
 
-        <p style="margin-top: 30px; color: #666; font-size: 14px;">
+        <p style="margin-top: 30px; color: #7f8c8d; font-size: 14px;">
             Built with ❤️ using Python + FastAPI
         </p>
     </div>
